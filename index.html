@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tables, Borders, Padding, Colspan and Rowspan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>HTML Table Example</h1>
+    <p>This table demonstrates table headers, borders, padding, colspan, rowspan and colgroup styling.</p>
+
+    <table>
+      <colgroup>
+        <col class="subject-column">
+        <col span="3" class="score-columns">
+      </colgroup>
+      <caption>Student Assessment Results</caption>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>Term 1</th>
+          <th>Term 2</th>
+          <th>Final Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Web Development</td>
+          <td>78%</td>
+          <td>84%</td>
+          <td>Pass</td>
+        </tr>
+        <tr>
+          <td>Practical</td>
+          <td>90%</td>
+          <td>Excellent</td>
+        </tr>
+        <tr>
+          <td>Database Design</td>
+          <td>72%</td>
+          <td>80%</td>
+          <td>Pass</td>
+        </tr>
+        <tr>
+          <td colspan="3">Overall Comment</td>
+          <td>Ready for next module</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>
